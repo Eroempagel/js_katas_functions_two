@@ -91,7 +91,7 @@ document.body.innerHTML +=
  ***
  *** Write a function named "Fibonacci" which takes an argument n
  *** and returns the nth Fibonacci number.
- *** fibonacci sequence: 0 1 1 2 3 5 8 13 21 34 55 89 144
+ *** fibonacci sequence: 0 1 1 2 3 5 8 13 21 34 55 89 ...
  ***
  **/
 
@@ -103,17 +103,19 @@ function fibonacci(x) {
     arr.push(add(arr[add(i, -1)], arr[add(i, -2)]));
     i = add(i, 1);
   }
+  // lets log the array just to be sure the array matches the sequence
+  console.log(arr);
   // taking into account index of zero
   return arr[add(x, -1)];
 }
 document.body.innerHTML += "</br>" + "Kata 05 ⮕ Fibonacci: " + "</br>";
 document.body.innerHTML +=
-  "</br>" +
-  "Given fibonacci sequence: 0 1 1 2 3 5 8 13 21 34 55 89 144" +
-  "</br>";
+  "</br>" + "Given fibonacci sequence: 0 1 1 2 3 5 8 13 21 34 55 89" + "</br>";
 console.log(fibonacci(6));
 document.body.innerHTML += "</br>" + "fibonacci 6 = " + fibonacci(6) + "</br>";
 console.log(fibonacci(7));
 document.body.innerHTML += "</br>" + "fibonacci 7 = " + fibonacci(7) + "</br>";
 console.log(fibonacci(8));
 document.body.innerHTML += "</br>" + "fibonacci 8 = " + fibonacci(8) + "</br>";
+console.log(fibonacci(9));
+document.body.innerHTML += "</br>" + "fibonacci 9 = " + fibonacci(9) + "</br>";
