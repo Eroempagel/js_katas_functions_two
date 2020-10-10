@@ -22,7 +22,7 @@ function multiply(a, b) {
   let count = 0;
   let mult = 0;
   while (count < b) {
-    mult += add(a, 0);
+    mult = add(mult, add(a, 0));
     count = add(count, 1);
   }
   return mult;
