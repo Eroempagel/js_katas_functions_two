@@ -105,7 +105,7 @@ function fibonacci(x) {
   }
   // lets log the array just to be sure the array matches the sequence
   console.log(arr);
-  // taking into account index of zero
+  // taking into account index of zero, based on example fibonacci(8) = 13
   return arr[add(x, -1)];
 }
 document.body.innerHTML += "</br>" + "Kata 05 ⮕ Fibonacci: " + "</br>";
