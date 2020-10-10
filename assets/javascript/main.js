@@ -23,7 +23,7 @@ function multiply(a, b) {
   let mult = 0;
   while (count < b) {
     mult += add(a, 0);
-    count += 1;
+    count = add(count, 1);
   }
   return mult;
 }
@@ -44,7 +44,7 @@ function power(x, n) {
   let pow = 1;
   while (i < n) {
     pow = multiply(pow, x); //on each loop multiplies pow by base number
-    i++;
+    i = add(i, 1);
   }
   return pow;
 }
@@ -67,7 +67,7 @@ function factorial(x) {
   let facto = 1;
   while (i <= x) {
     facto = multiply(facto, i);
-    i++;
+    i = add(i, 1);
   }
   return facto;
 }
@@ -92,7 +92,7 @@ function fibonacci(x) {
   while (i < add(x, 1)) {
     // F(n) = F(n-1) + F(n-2)
     arr.push(add(arr[add(i, -1)], arr[add(i, -2)]));
-    i++;
+    i = add(i, 1);
   }
   // taking into account index of zero
   return arr[add(x, -1)];
