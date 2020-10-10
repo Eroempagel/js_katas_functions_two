@@ -86,16 +86,16 @@ document.body.innerHTML += "</br>" + factorial(6) + "</br>";
  ***
  **/
 
-// F(n) = F(n-1) + F(n-2)
-
 function fibonacci(x) {
   let arr = [0, 1];
   let i = 2;
   while (i < add(x, 1)) {
-    arr.push(add(arr[i - 2], arr[i - 1]));
+    // F(n) = F(n-1) + F(n-2)
+    arr.push(add(arr[add(i, -1)], arr[add(i, -2)]));
     i++;
   }
-  return arr[x];
+  // taking into account index of zero
+  return arr[add(x, -1)];
 }
 console.log(fibonacci(6));
 document.body.innerHTML += "</br>" + fibonacci(6) + "</br>";
