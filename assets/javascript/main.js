@@ -10,7 +10,7 @@ function add(a, b) {
 }
 document.body.innerHTML += "</br>" + "Kata 01 ⮕ Add: " + "</br>";
 console.log(add(2, 4));
-document.body.innerHTML += "</br>" + add(2, 4) + "</br>";
+document.body.innerHTML += "</br>" + "2 + 4 = " + add(2, 4) + "</br>";
 
 /** KATA 02 ⮕ Multiply
  ***
@@ -29,9 +29,9 @@ function multiply(a, b) {
 }
 document.body.innerHTML += "</br>" + "Kata 02 ⮕ Multiply: " + "</br>";
 console.log(multiply(6, 4));
-document.body.innerHTML += "</br>" + multiply(6, 4) + "</br>";
+document.body.innerHTML += "</br>" + "6 * 4 = " + multiply(6, 4) + "</br>";
 console.log(multiply(8, 5));
-document.body.innerHTML += "</br>" + multiply(8, 5) + "</br>";
+document.body.innerHTML += "</br>" + "8 * 5 = " + multiply(8, 5) + "</br>";
 
 /** KATA 03 ⮕ Power/Exponentiation
  ***
@@ -51,11 +51,14 @@ function power(x, n) {
 }
 document.body.innerHTML += "</br>" + "Kata 03 ⮕ Power: " + "</br>";
 console.log(power(2, 8));
-document.body.innerHTML += "</br>" + power(2, 8) + "</br>";
+document.body.innerHTML +=
+  "</br>" + "2 to the 8th power = " + power(2, 8) + "</br>";
 console.log(power(3, 4));
-document.body.innerHTML += "</br>" + power(3, 4) + "</br>";
+document.body.innerHTML +=
+  "</br>" + "3 to the 4th power = " + power(3, 4) + "</br>";
 console.log(power(4, 3));
-document.body.innerHTML += "</br>" + power(4, 3) + "</br>";
+document.body.innerHTML +=
+  "</br>" + "4 to the 3rd power = " + power(4, 3) + "</br>";
 
 /** KATA 04 ⮕ Factorial
  ***
@@ -75,11 +78,14 @@ function factorial(x) {
 }
 document.body.innerHTML += "</br>" + "Kata 04 ⮕ Factorial: " + "</br>";
 console.log(factorial(4));
-document.body.innerHTML += "</br>" + factorial(4) + "</br>";
+document.body.innerHTML +=
+  "</br>" + "factorial of 4 = " + factorial(4) + "</br>";
 console.log(factorial(5));
-document.body.innerHTML += "</br>" + factorial(5) + "</br>";
+document.body.innerHTML +=
+  "</br>" + "factorial of 5 = " + factorial(5) + "</br>";
 console.log(factorial(6));
-document.body.innerHTML += "</br>" + factorial(6) + "</br>";
+document.body.innerHTML +=
+  "</br>" + "factorial of 6 = " + factorial(6) + "</br>";
 
 /** KATA 05 ⮕ Fibonacci
  ***
@@ -101,9 +107,13 @@ function fibonacci(x) {
   return arr[add(x, -1)];
 }
 document.body.innerHTML += "</br>" + "Kata 05 ⮕ Fibonacci: " + "</br>";
+document.body.innerHTML +=
+  "</br>" +
+  "Given fibonacci sequence: 0 1 1 2 3 5 8 13 21 34 55 89 144" +
+  "</br>";
 console.log(fibonacci(6));
-document.body.innerHTML += "</br>" + fibonacci(6) + "</br>";
+document.body.innerHTML += "</br>" + "fibonacci 6 = " + fibonacci(6) + "</br>";
 console.log(fibonacci(7));
-document.body.innerHTML += "</br>" + fibonacci(7) + "</br>";
+document.body.innerHTML += "</br>" + "fibonacci 7 = " + fibonacci(7) + "</br>";
 console.log(fibonacci(8));
-document.body.innerHTML += "</br>" + fibonacci(8) + "</br>";
+document.body.innerHTML += "</br>" + "fibonacci 8 = " + fibonacci(8) + "</br>";
