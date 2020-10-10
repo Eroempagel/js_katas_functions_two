@@ -8,7 +8,7 @@ function add(a, b) {
   return a + b;
   // document.body.innerHTML += "</br>" + add + "</br>";
 }
-
+document.body.innerHTML += "</br>" + "Kata 01 ⮕ Add: " + "</br>";
 console.log(add(2, 4));
 document.body.innerHTML += "</br>" + add(2, 4) + "</br>";
 
@@ -27,6 +27,7 @@ function multiply(a, b) {
   }
   return mult;
 }
+document.body.innerHTML += "</br>" + "Kata 02 ⮕ Multiply: " + "</br>";
 console.log(multiply(6, 4));
 document.body.innerHTML += "</br>" + multiply(6, 4) + "</br>";
 console.log(multiply(8, 5));
@@ -48,6 +49,7 @@ function power(x, n) {
   }
   return pow;
 }
+document.body.innerHTML += "</br>" + "Kata 03 ⮕ Power: " + "</br>";
 console.log(power(2, 8));
 document.body.innerHTML += "</br>" + power(2, 8) + "</br>";
 console.log(power(3, 4));
@@ -71,6 +73,7 @@ function factorial(x) {
   }
   return facto;
 }
+document.body.innerHTML += "</br>" + "Kata 04 ⮕ Factorial: " + "</br>";
 console.log(factorial(4));
 document.body.innerHTML += "</br>" + factorial(4) + "</br>";
 console.log(factorial(5));
@@ -97,6 +100,7 @@ function fibonacci(x) {
   // taking into account index of zero
   return arr[add(x, -1)];
 }
+document.body.innerHTML += "</br>" + "Kata 05 ⮕ Fibonacci: " + "</br>";
 console.log(fibonacci(6));
 document.body.innerHTML += "</br>" + fibonacci(6) + "</br>";
 console.log(fibonacci(7));
